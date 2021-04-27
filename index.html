@@ -13,47 +13,44 @@
     <title>Document</title>
 </head>
 
-<body>
-<nav class="navbar navbar-expand-md fixed-top">
-    <a href="#" class="navbar-brand  ">Home</a>
+<body data-spy="scroll" data-target="#navbar-scrollSpy" data-offset="50">
+
+<nav class="navbar navbar-expand-md fixed-top" id="navbar-scrollSpy">
+    <a href="#" class="navbar-brand ">Home</a>
     <!--    burger menu should be here-->
 
     <button type="button " class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
         <span class="fa fa-bars"></span>
     </button>
-
-
     <div class="collapse navbar-collapse" id="navbar-content">
-        <ul class="navbar-nav w-100 justify-content-end">
+        <ul class="nav nav-pills w-100 justify-content-end">
             <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
-
-            <a href="#" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Team</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">
-                Contact
-            </a>
+            <li class="nav-item">
+                <a href="#team" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Contact
+                </a>
             </li>
             <li class="nav-item">
                 <a href="https://facebook.com" class="nav-link" target="_blank">
                     <i class="fab fa-facebook-f">
                         <span class="d-md-none">Facebook</span>
                     </i>
-
-
                 </a>
-
             </li>
-
-
         </ul>
     </div>
 </nav>
+
 <header>
+
     <div class="overlay"></div>
     <div class="container d-flex align-items-center h-100">
         <div class="description ">
@@ -66,93 +63,100 @@
 
 
 </header>
+
 <div class="about" id="about">
     <div class="container">
         <h1 class="text-center my-5 text-success">About me</h1>
         <div class="row">
-            <div class="col-sm-12 col-md-4 ">
+            <div class="col-sm-12 col-md-4 img ">
                 <img src="img/JD.png" alt="" class="img-fluid d-block mx-auto img-thumbnail">
+                <div class="connect">
+                    <h5>My contacts</h5>
+                    <p>Tel:89005454345</p>
+                    <p>Email:bestDoctor@gmail.best</p>
+                </div>
                 <hr>
                 <h4 class="text-center lead">Dr. J.D.</h4>
             </div>
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-8 about__text">
                 <h3>Scrube</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur consequuntur dicta
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur consequuntur
+                    dicta
                     dolores ea earum, enim error exercitationem ipsa, magnam maiores molestiae mollitia nam nesciunt
-                    nisi nobis nostrum perferendis possimus provident quis recusandae sapiente similique sit suscipit
+                    nisi nobis nostrum perferendis possimus provident quis recusandae sapiente similique sit
+                    suscipit
                     veritatis. Aliquam dolorum eius esse iure, sit soluta tempore unde voluptas. Adipisci animi
-                    dignissimos dolore dolores eius esse eveniet harum illo laudantium maiores, molestiae necessitatibus
-                    odio officia officiis omnis pariatur quisquam quo recusandae sequi voluptatibus. Adipisci laudantium
-                    molestias necessitatibus ratione sequi similique temporibus tenetur velit! Adipisci earum eligendi
-                    eos illum minima necessitatibus nisi, quasi ullam. At corporis facere facilis harum, incidunt neque
+                    dignissimos dolore dolores eius esse eveniet harum illo laudantium maiores, molestiae
+                    necessitatibus
+                    odio officia officiis omnis pariatur quisquam quo recusandae sequi voluptatibus. Adipisci
+                    laudantium
+                    molestias necessitatibus ratione sequi similique temporibus tenetur velit! Adipisci earum
+                    eligendi
+                    eos illum minima necessitatibus nisi, quasi ullam. At corporis facere facilis harum, incidunt
+                    neque
                     praesentium!</p>
             </div>
         </div>
-
     </div>
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-                <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
-                                                              class="img-fluid m-1"></div>
-            </div>
+</div>
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="img/portfolio-image.png" alt="img"
+                                                          class="img-fluid m-1"></div>
         </div>
-
-
     </div>
-    <!--    team-->
-    <div class="team" id="team">
-        <h1 class="text-center my-5">Our team</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 team-item">
-                    <img src="img/cox.jpg" alt="" class="img-fluid">
-                    <div class="team-des">
-                        <div class="team-des-1">Dr.Cox</div>
-                        <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
-                    </div>
-                    <span class="text-muted">Main doctor</span>
+</div>
+<!--    team-->
+<div class="team" id="team">
+    <h1 class="text-center my-5">Our team</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 team-item">
+                <img src="img/cox.jpg" alt="" class="img-fluid">
+                <div class="team-des">
+                    <div class="team-des-1">Dr.Cox</div>
+                    <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
                 </div>
-                <div class="col-sm-6 col-md-3 team-item">
-                    <img src="img/cox.jpg" alt="" class="img-fluid">
-                    <div class="team-des">
-                        <div class="team-des-1">Dr.Cox</div>
-                        <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
-                    </div>
-                    <span class="text-muted">Main doctor</span>
+                <span class="text-muted">Main doctor</span>
+            </div>
+            <div class="col-sm-6 col-md-3 team-item">
+                <img src="img/cox.jpg" alt="" class="img-fluid">
+                <div class="team-des">
+                    <div class="team-des-1">Dr.Cox</div>
+                    <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
                 </div>
-                <div class="col-sm-6 col-md-3 team-item">
-                    <img src="img/cox.jpg" alt="" class="img-fluid">
-                    <div class="team-des">
-                        <div class="team-des-1">Dr.Cox</div>
-                        <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
-                    </div>
-                    <span class="text-muted">Main doctor</span>
+                <span class="text-muted">Main doctor</span>
+            </div>
+            <div class="col-sm-6 col-md-3 team-item">
+                <img src="img/cox.jpg" alt="" class="img-fluid">
+                <div class="team-des">
+                    <div class="team-des-1">Dr.Cox</div>
+                    <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
                 </div>
-                <div class="col-sm-6 col-md-3 team-item">
-                    <img src="img/cox.jpg" alt="" class="img-fluid">
-                    <div class="team-des">
-                        <div class="team-des-1">Dr.Cox</div>
-                        <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
-                    </div>
-                    <span class="text-muted">Main doctor</span>
+                <span class="text-muted">Main doctor</span>
+            </div>
+            <div class="col-sm-6 col-md-3 team-item">
+                <img src="img/cox.jpg" alt="" class="img-fluid">
+                <div class="team-des">
+                    <div class="team-des-1">Dr.Cox</div>
+                    <div class="team-des-2">Lorem ipsum dolor sit amet, consectetur.</div>
                 </div>
+                <span class="text-muted">Main doctor</span>
             </div>
         </div>
     </div>

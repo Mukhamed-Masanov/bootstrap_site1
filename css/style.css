@@ -1,11 +1,16 @@
+*{
+    box-sizing: border-box;
+}
 
+
+body{
+    position: relative;
+}
 header{
     position: relative;
     height:100vh ;
 
 }
-
-
 .overlay{
 position: absolute;
     left: 0;
@@ -53,6 +58,73 @@ position: absolute;
     top: 0;
     border-top-right-radius: 0;
 }
+.about__text{
+    position: relative;
+}
 
 
 
+.about__text:before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 2px solid transparent;
+    bottom: 0;
+    left: 0;
+}
+.about__text:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 2px solid transparent;
+}
+.about__text:hover:before{
+    width: 100%;
+    height: 100%;
+    border: 5px inset #4be3b0;
+    border-bottom: none;
+    border-right: none;
+    transition:  height 1s linear,width 1s linear 1s ;
+}
+
+.about__text:hover:after{
+    width:100%;
+    height: 100%;
+    border: 5px inset #4be3b0;
+    border-top: none;
+    border-left: none;
+    transition: height 1s linear ,width 1s linear 1s ;
+}
+.img{
+    position: relative;
+}
+.connect{
+    background-color: aquamarine;
+    width: 68.5%;
+    height: 44%;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    color: #93a3b1;
+    opacity: 0;
+    transition: opacity 250ms;
+
+}
+.connect>*{
+    text-align: center;
+}
+
+.connect{
+    transform: translateY(15px);
+    transition: transform 250ms;
+}
+.img:hover>.connect{
+   opacity: .9;
+}
+.img:hover>.connect{
+    transform: translateY(0);
+}

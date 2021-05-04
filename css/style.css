@@ -1,16 +1,19 @@
 *{
     box-sizing: border-box;
 }
-
-
 body{
     position: relative;
 }
 header{
     position: relative;
     height:100vh ;
-
 }
+.description{
+    opacity: 0;
+    transform: translateX(10px);
+    animation:appearing 1s ease-in forwards;
+}
+
 .overlay{
 position: absolute;
     left: 0;
@@ -26,7 +29,6 @@ position: absolute;
 }
 .navbar{
     background-color: #4be3b0;
-
 }
 .nav-link, .navbar-brand{
     color: #f4f4f4;
@@ -38,7 +40,6 @@ position: absolute;
 /*team start*/
 .team, .team-item{
     position: relative;
-
 }
 .team-des{
     background-color: #4be3b0;
@@ -49,7 +50,6 @@ position: absolute;
     width: 90%;
     border-top-right-radius: 93%;
     transition: .3s ease-in-out;
-
 }
 .team-item:hover .team-des{
     height: 100%;
@@ -58,12 +58,20 @@ position: absolute;
     top: 0;
     border-top-right-radius: 0;
 }
+.about-title{
+    overflow: hidden;
+    position: relative;
+    border-right: 2px solid green;
+    margin: auto;
+    white-space: nowrap;
+}
+.about-animation{
+    animation: textTyping 2s steps(22) 2s 1 normal  both,
+    blinkTextCursor 500ms steps(44) infinite  normal;
+}
 .about__text{
     position: relative;
 }
-
-
-
 .about__text:before{
     position: absolute;
     content: '';
@@ -90,7 +98,6 @@ position: absolute;
     border-right: none;
     transition:  height 1s linear,width 1s linear 1s ;
 }
-
 .about__text:hover:after{
     width:100%;
     height: 100%;
@@ -112,12 +119,10 @@ position: absolute;
     color: #93a3b1;
     opacity: 0;
     transition: opacity 250ms;
-
 }
 .connect>*{
     text-align: center;
 }
-
 .connect{
     transform: translateY(15px);
     transition: transform 250ms;
@@ -128,3 +133,31 @@ position: absolute;
 .img:hover>.connect{
     transform: translateY(0);
 }
+.img-element{
+    transition: 500ms ;
+}
+.img-element:hover{
+    transform: scale(.8);
+}
+@keyframes appearing {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes textTyping {
+    from{
+        width: 0;
+    }
+   to {
+       width: 17%;
+   }
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: green;}
+    to{border-right-color: transparent;
+    }
+}
+

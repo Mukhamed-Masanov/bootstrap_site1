@@ -64,9 +64,10 @@ position: absolute;
     border-right: 2px solid green;
     margin: auto;
     white-space: nowrap;
+    width: 200px;
 }
 .about-animation{
-    animation: textTyping 2s steps(22) 2s 1 normal  both,
+    animation: textTyping 2s steps(22) 5s 1 normal  both,
     blinkTextCursor 500ms steps(44) infinite  normal;
 }
 .about__text{
@@ -109,13 +110,16 @@ position: absolute;
 .img{
     position: relative;
 }
+.img-connect{
+    position: relative;
+}
 .connect{
     background-color: aquamarine;
-    width: 68.5%;
-    height: 44%;
+    max-width: 100%;
+     height: 50%;
     position: absolute;
-    top: 30%;
-    left: 16%;
+    bottom: 0;
+    left: 0;
     color: #93a3b1;
     opacity: 0;
     transition: opacity 250ms;
@@ -123,14 +127,17 @@ position: absolute;
 .connect>*{
     text-align: center;
 }
+.connect>p{
+    margin: 0 0 0 0 ;
+}
 .connect{
     transform: translateY(15px);
     transition: transform 250ms;
 }
-.img:hover>.connect{
+.img-connect:hover>.connect{
    opacity: .9;
 }
-.img:hover>.connect{
+.img-connect:hover>.connect{
     transform: translateY(0);
 }
 .img-element{
@@ -152,7 +159,7 @@ position: absolute;
         width: 0;
     }
    to {
-       width: 17%;
+       width: 190px;
    }
 }
 @keyframes blinkTextCursor{
@@ -160,4 +167,25 @@ position: absolute;
     to{border-right-color: transparent;
     }
 }
+@media screen and (max-width: 768px) {
+.connect{
+    left: 24%;
+    width: 52%;
+        }
+}
+
+@media screen and (min-width: 991px) {
+    .connect{
+        width: 90%;
+        left: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .connect{
+        width: 75%;
+        left: 44px;
+    }
+}
+
 
